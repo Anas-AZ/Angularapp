@@ -6,7 +6,7 @@
         <h3>{{post.title}}</h3>
         <p>{{post.body}}</p>
         <hr>
-        <button class="btn btn-danger">Remove</button> &nbsp;
+        <button class="btn btn-danger" (click)="removePost(post)">Remove</button> &nbsp;
         <button class="btn btn-light" (click)="editPost(post)">Edit</button>
 
     </div>
