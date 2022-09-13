@@ -1,0 +1,19 @@
+<h2>Add Post</h2>
+<div class="card card-body mb-3">
+    <form action="">
+        <div class="form-group">
+            <label >Title</label>
+            <input type="text" class="form-control" [(ngModel)]="currentPost.title" name="title" #title>
+        </div>
+        <div class="form-group">
+            <label >Body</label>
+            <input type="text" class="form-control" [(ngModel)]="currentPost.body" name="body" #body>
+        </div>
+        <input type="hidden" class="form-control" [(ngModel)]="currentPost.id" name="id">
+
+        <button *ngIf="!isEdit" (click)="addPost(title.value, body.value)" class="bt-dark btn-block">Add Post</button>
+        <button *ngIf="isEdit" (click)="updatePost()" class="bt-warning btn-block">Update Post</button>
+
+    </form>
+</div>
+
