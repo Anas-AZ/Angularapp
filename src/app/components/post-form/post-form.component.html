@@ -11,8 +11,8 @@
         </div>
         <input type="hidden" class="form-control" [(ngModel)]="currentPost.id" name="id">
 
-        <button *ngIf="!isEdit" (click)="addPost(title.value, body.value)" class="bt-dark btn-block">Add Post</button>
-        <button *ngIf="isEdit" (click)="updatePost()" class="bt-warning btn-block">Update Post</button>
+        <button *ngIf="!isEdit" (click)="addPost(title.value, body.value)" class="btn-dark btn-block">Add Post</button>
+        <button *ngIf="isEdit" (click)="updatePost()" class="btn-warning btn-block">Update Post</button>
 
     </form>
 </div>

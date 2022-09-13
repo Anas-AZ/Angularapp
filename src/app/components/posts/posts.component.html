@@ -1,4 +1,5 @@
-<app-post-form [currentPost]="currentPost" (newPost)="onNewPost($event)" [isEdit]="isEdit"></app-post-form>
+<app-post-form [currentPost]="currentPost" (newPost)="onNewPost($event)"
+(updatedPost)="onUpdatedPost($event)" [isEdit]="isEdit"></app-post-form>
 <h2>Posts</h2>
 <div class="card" *ngFor="let post of posts">
     <div class="card-body">
