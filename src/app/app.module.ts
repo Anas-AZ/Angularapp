@@ -12,13 +12,15 @@ import { PostsComponent } from './components/posts/posts.component';
 import { PostService } from './services/post.service';
 import { PostFormComponent } from './components/post-form/post-form.component';
 import { AppRoutingModule } from './app-routing.module';
+import { HomeComponent } from './components/home/home.component';
+import { PostComponent } from './components/post/post.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent, 
-    UserComponent, UsersComponent, NavbarComponent, PostsComponent, PostFormComponent
+    UserComponent, UsersComponent, NavbarComponent, PostsComponent, PostFormComponent, HomeComponent, PostComponent
   ],
   imports: [
     BrowserModule,
